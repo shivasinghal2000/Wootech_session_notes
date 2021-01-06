@@ -11,7 +11,7 @@ Each Session Notes on Data Structures And Algorithms
 - Lakshita Mohanty
 
 ## Abstract
-- This is approximately 8 week programs during which I intend to help my mentees to ace their interviews. Each topic is covered in details and questions are solved live by both mentor and mentees in class. We have covered all the levels of question in detail be it easy, medium or hard. Also I have resolved doubts of students live in class by looking through their code and finding bugs or errors in their code so thatthey can understand it in much better way. I have also provided questions daily as an assignment. The doubts of those assignments are taken every week. 
+- This is approximately 8 week long program during which I intend to help my mentees to ace their interviews. Each topic will be cover in details and questions will be solved live by both mentor and mentees in class. We will cover all the levels of question be it easy, medium or hard. Also I will resolve doubts of students live in class by looking through their code and finding bugs or errors in their code so that they can understand it in much better way. I will also provid questions daily as an assignment. The doubts of those assignments will be taken every week. Separate sheet of those questions will be there. I will be tracking the performance of mentees too and whosoever performs best as a reward I will take their interview at the end. I beileve Consistency is the key to success so daily assignments are necessary. My motive is to discuss each and every possible solution of question in depth so that mentees will know how we have reached to the most optimised approach of that question. 
 
 ## Tech-Stack
 - C/C++
