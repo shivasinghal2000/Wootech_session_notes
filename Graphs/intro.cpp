@@ -310,11 +310,11 @@ void kahnsAlgo()
     for (int i = 0; i < N; i++)
     {
         for (Edge e : graph[i])
-            indegre[e.v]++;
+            indegre[e.v]++;   
     }
 
-    queue<int> que;
-    vector<int> ans;
+    queue<int> que; // to mantain order
+    vector<int> ans; // store topological sort
 
     for (int i = 0; i < N; i++)
     {
@@ -361,27 +361,28 @@ void dfs(int src, vector<bool> &vis, vector<vector<Edge>> &graph, vector<int> &r
 void KosaRajuAlgoFor_SCC()
 {
     vector<bool> vis(N, false);
-    vector<int> res;
-
+    vector<int> res; // store dfs of original graph
+    
     for (int i = 0; i < N; i++)
         if (!vis[i])
             dfs(i, vis, graph, res);
 
-    vector<vector<Edge>> gp(N, vector<Edge>());
+    vector<vector<Edge>> gp(N, vector<Edge>()); // new graph = reverse edges
     for (int i = 0; i < N; i++)
         for (Edge e : graph[i])
             gp[e.v].push_back(Edge(i, e.w));
 
     for (int i = 0; i < N; i++)
         vis[i] = false;
-    int count = 1;
-    vector<int> vtx;
+    
+    int count = 0;
+    vector<int> vtx; // represents one line of SCC i.e. it represents one SCC of graph
 
     for (int i = res.size() - 1; i >= 0; i--)
         if (!vis[res[i]])
         {
             dfs(res[i], vis, gp, vtx);
-            cout << count++ << " -> ";
+            cout << ++count << " -> ";
             while (vtx.size() != 0)
             {
                 cout << vtx.back() << ", ";
