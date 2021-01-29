@@ -128,8 +128,7 @@ int dikistra(int source, int desti, vector<bool> &vis)
     priority_queue<DijiPair, vector<DijiPair>, compareDijiTo> pq;
 
     vector<int> mDistanceSF(N, 1e8); // minimum distance so far
-
-    pq.push(DijiPair(source, -1, 0, 0));
+    pq.push(DijiPair(source, -1, 0, 0));  // INTITIAL SOURCE
     while (pq.size() != 0)
     {
         DijiPair rvtx = pq.top();
